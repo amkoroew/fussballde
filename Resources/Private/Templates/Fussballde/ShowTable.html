@@ -4,7 +4,7 @@
 	<script type="text/javascript" src="http://ergebnisdienst.fussball.de/static/egm//js/egmWidget.js?schluessel={settings.key->f:format.raw()}"></script>
 	<div id="table"></div>
 	<script type="text/javascript">
-		var fusballdeT = new fussballdeAPI();
+		var fussballdeT = new fussballdeAPI();
 		fussballdeT.setzeMandant('{settings.mandat->f:format.raw()}');
 		fussballdeT.setzeWettbewerb('{settings.wettbewerb->f:format.raw()}');
 		fussballdeT.zeigeTabelle('table');
