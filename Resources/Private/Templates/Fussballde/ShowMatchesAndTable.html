@@ -1,0 +1,14 @@
+<f:layout name="Default"/>
+
+<f:section name="content">
+	<script type="text/javascript" src="http://ergebnisdienst.fussball.de/static/egm//js/egmWidget.js?schluessel={settings.key->f:format.raw()}"></script>
+	<div id="matchesMAT"></div>
+	<div id="tableMAT"></div>
+	<script type="text/javascript">
+		var fusballdeMAT = new fussballdeAPI();
+		fussballdeMAT.setzeMandant('{settings.mandat->f:format.raw()}');
+		fussballdeMAT.setzeWettbewerb('{settings.wettbewerb->f:format.raw()}');
+		fussballdeMAT.zeigeWettbewerb('matchesMAT');
+		fussballdeMAT.zeigeTabelle('tableMAT');
+	</script>
+</f:section>

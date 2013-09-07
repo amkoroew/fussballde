@@ -1,0 +1,12 @@
+<f:layout name="Default"/>
+
+<f:section name="content">
+	<script type="text/javascript" src="http://ergebnisdienst.fussball.de/static/egm//js/egmWidget.js?schluessel={settings.key->f:format.raw()}"></script>
+	<div id="matches"></div>
+	<script type="text/javascript">
+		var fussballdeM = new fussballdeAPI();
+		fussballdeM.setzeMandant('{settings.mandat->f:format.raw()}');
+		fussballdeM.setzeWettbewerb('{settings.wettbewerb->f:format.raw()}');
+		fussballdeM.zeigeWettbewerb('matches');
+	</script>
+</f:section>

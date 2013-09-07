@@ -1,0 +1,69 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Settings</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<switchableControllerActions>
+						<TCEforms>
+							<label>Mode</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numindex index="1" type="array">
+										<numindex index="0">Matches</numindex>
+										<numindex index="1">Fussballde->showMatches</numindex>
+									</numindex>
+									<numindex index="2" type="array">
+										<numindex index="0">Table</numindex>
+										<numindex index="1">Fussballde->showTable</numindex>
+									</numindex>
+									<numindex index="3" type="array">
+										<numindex index="0">Matches and Table</numindex>
+										<numindex index="1">Fussballde->showMatchesAndTable</numindex>
+									</numindex>
+								</items>
+							</config>
+						</TCEforms>
+					</switchableControllerActions>
+					<settings.key>
+						<TCEforms>
+							<label>API Key</label>
+							<config>
+								<type>input</type>
+								<size>32</size>
+								<eval>trim,required</eval>
+							</config>
+						</TCEforms>
+					</settings.key>
+					<settings.wettbewerb>
+						<TCEforms>
+							<label>Wettbewerb</label>
+							<config>
+								<type>input</type>
+								<size>34</size>
+								<eval>trim,required</eval>
+							</config>
+						</TCEforms>
+					</settings.wettbewerb>
+					<settings.mandat>
+						<TCEforms>
+							<label>Mandat</label>
+							<config>
+								<type>input</type>
+								<size>2</size>
+								<eval>trim,required</eval>
+							</config>
+						</TCEforms>
+					</settings.mandat>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>
