@@ -1,12 +1,14 @@
+{namespace v=Tx_Vhs_ViewHelpers}
+ 
 <f:layout name="Default"/>
 
 <f:section name="content">
-	<script type="text/javascript" src="http://ergebnisdienst.fussball.de/static/egm//js/egmWidget.js?schluessel={settings.key->f:format.raw()}"></script>
+	<v:asset.script external="1" name="fussballde" path="http://ergebnisdienst.fussball.de/static/egm//js/egmWidget.js?schluessel={settings.key->f:format.raw()}" overwrite="1" allowMoveToFooter="1" trim="1" namedChunks="1" />
 	<div id="matches"></div>
-	<script type="text/javascript">
+	<v:asset.script allowMoveToFooter="1" trim="1" namedChunks="1">
 		var fussballdeM = new fussballdeAPI();
 		fussballdeM.setzeMandant('{settings.mandat->f:format.raw()}');
 		fussballdeM.setzeWettbewerb('{settings.wettbewerb->f:format.raw()}');
 		fussballdeM.zeigeWettbewerb('matches');
-	</script>
+	</v:asset.script>
 </f:section>
