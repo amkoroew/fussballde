@@ -1,15 +1,34 @@
-Extension Manual
-=================
+=========================
+EXT: fussballde
+=========================
 
-This is a template manual aiming to pave the way to developers when it comes about documentation. The template provides a structure that a developer can take over and, in addition, many useful snippets and examples. Documentation is written in reST format. Refer to Help writing reStructuredText to get some more insight about the syntax and available reST editors. For instance, you might be particularly interested how you can :
+Extension Key: fussballde
 
-* generate the documentation using on-line services (@todo to write) 
-* `make links`_ accros projects
-* how you should write TypoScript reference.
+Language: en
 
-Any idea or suggestion for improving this template `can be drop`_ to our team_. And remember: documentation is like gift wrapping, it looks like superfluous, but your friend tends to be rather disappointed when their presents arrive in supermarket carrier bags. (Documentation-Driven Design quote)
+Version: 1.0.0
 
-.. _can be drop: http://forge.typo3.org/projects/typo3v4-official_extension_template/issues
-.. _team: http://forge.typo3.org/projects/typo3v4-official_extension_template
-.. _make links: RestructuredtextHelp.html#cross-linking
-.. _can write TypoScript: RestructuredtextHelp.html#typoscript-reference
+Keywords: fussball
+
+Copyright 2013, Matthias Gugel, <mail@matthias-gugel.de>
+
+This document is published under the Open Content License available from http://www.opencontent.org/opl.shtml
+
+The content of this document is related to TYPO3 - a GNU/GPL CMS/Framework available from www.typo3.org
+
+Introduction
+============
+
+What does it do?
+----------------
+Shows matches and/or table from fussball.de.
+
+Screenshots
+-----------
+.. figure:: Documentation/Images/UserManual/Fussballde-Settings.png
+        :width: 500px
+        :alt: Settings
+
+        Settings
+
+        All settings are required.
