@@ -3,12 +3,12 @@
 <f:layout name="Default"/>
 
 <f:section name="content">
-	<v:asset.script external="1" name="fussballde" path="http://ergebnisdienst.fussball.de/static/egm//js/egmWidget.js?schluessel={settings.key->f:format.raw()}" overwrite="1" allowMoveToFooter="1" trim="1" namedChunks="1" />
+	<v:asset.script name="fussballde" path="http://ergebnisdienst.fussball.de/static/egm//js/egmWidget.js?schluessel={settings.key->f:format.raw()}" standalone="true" external="true" overwrite="true" />
 	<div id="table"></div>
-	<v:asset.script allowMoveToFooter="1" trim="1" namedChunks="1">
+	<script type="text/javascript">
 		var fussballdeT = new fussballdeAPI();
 		fussballdeT.setzeMandant('{settings.mandat->f:format.raw()}');
 		fussballdeT.setzeWettbewerb('{settings.wettbewerb->f:format.raw()}');
 		fussballdeT.zeigeTabelle('table');
-	</v:asset.script>
+	</script>
 </f:section>
