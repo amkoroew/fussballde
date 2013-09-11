@@ -6,11 +6,11 @@
 	<v:asset.script name="fussballde" path="http://ergebnisdienst.fussball.de/static/egm//js/egmWidget.js?schluessel={settings.key->f:format.raw()}" standalone="true" external="true" overwrite="true" />
 	<div id="matchesMAT"></div>
 	<div id="tableMAT"></div>
-	<script type="text/javascript">
+	<v:asset.script name="fussballdeMAT">
 		var fussballdeMAT = new fussballdeAPI();
 		fussballdeMAT.setzeMandant('{settings.mandat->f:format.raw()}');
 		fussballdeMAT.setzeWettbewerb('{settings.wettbewerb->f:format.raw()}');
 		fussballdeMAT.zeigeWettbewerb('matchesMAT');
 		fussballdeMAT.zeigeTabelle('tableMAT');
-	</script>
+	</v:asset.script>
 </f:section>

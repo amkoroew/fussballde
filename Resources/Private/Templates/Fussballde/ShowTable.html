@@ -5,10 +5,10 @@
 <f:section name="content">
 	<v:asset.script name="fussballde" path="http://ergebnisdienst.fussball.de/static/egm//js/egmWidget.js?schluessel={settings.key->f:format.raw()}" standalone="true" external="true" overwrite="true" />
 	<div id="table"></div>
-	<script type="text/javascript">
+	<v:asset.script name="fussballdeT">
 		var fussballdeT = new fussballdeAPI();
 		fussballdeT.setzeMandant('{settings.mandat->f:format.raw()}');
 		fussballdeT.setzeWettbewerb('{settings.wettbewerb->f:format.raw()}');
 		fussballdeT.zeigeTabelle('table');
-	</script>
+	</v:asset.script>
 </f:section>
