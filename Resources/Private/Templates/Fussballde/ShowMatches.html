@@ -4,11 +4,11 @@
 
 <f:section name="content">
 	<v:asset.script name="fussballde" path="http://ergebnisdienst.fussball.de/static/egm//js/egmWidget.js?schluessel={settings.key->f:format.raw()}" standalone="true" external="true" overwrite="true" />
-	<div id="matches"></div>
-	<v:asset.script name="fussballdeM">
-		var fussballdeM = new fussballdeAPI();
-		fussballdeM.setzeMandant('{settings.mandat->f:format.raw()}');
-		fussballdeM.setzeWettbewerb('{settings.wettbewerb->f:format.raw()}');
-		fussballdeM.zeigeWettbewerb('matches');
+	<div id="fussballde{uid}-matches"></div>
+	<v:asset.script name="fussballde{uid}">
+		var fussballde{uid} = new fussballdeAPI();
+		fussballde{uid}.setzeMandant('{settings.mandat->f:format.raw()}');
+		fussballde{uid}.setzeWettbewerb('{settings.wettbewerb->f:format.raw()}');
+		fussballde{uid}.zeigeWettbewerb('fussballde{uid}-matches');
 	</v:asset.script>
 </f:section>

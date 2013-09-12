@@ -26,12 +26,20 @@ namespace MFG\Fussballde\Controller;
  * @subpackage dwzlist
  */
 class FussballdeController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
+	/**
+	 * Initialize View
+	 * @return void
+	 */
+	public function initializeView() {
+		$this->view->assign('uid', $this->configurationManager->getContentObject()->data['uid']);
+	}
 
         /**
          * Show matches
          * @return void
          */
-        public function showMatchesAction() {}
+        public function showMatchesAction() {
+	}
 
         /**
          * Show table
